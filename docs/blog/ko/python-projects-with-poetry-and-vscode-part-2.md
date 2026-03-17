@@ -160,7 +160,7 @@ pytest
 
 - 상태 표시줄에 새 버튼 **Run Tests**가 나타났습니다. 이것은 터미널에 *pytest*를 입력하는 것과 같습니다. 그것을 누르고 **Run All Unit Tests**를 선택하십시오. 완료되면 통과한 테스트 수와 실패한 테스트 수를 알려줍니다.
 
-  ![test status bar](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img.png)
+  ![test status bar](/blog/poetry-2.jpg)
 
 - 왼쪽 막대에 새 아이콘이 생겼습니다. 클릭하면 모든 테스트를 표시하는 패널이 나타납니다. 여기서 각 테스트를 개별적으로 실행할 수 있습니다.
 

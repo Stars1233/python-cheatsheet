@@ -49,6 +49,8 @@ declare module 'vue' {
     GridIcon: typeof import('./components/icons/GridIcon.vue')['default']
     HomePage: typeof import('./components/HomePage.vue')['default']
     LightBulbIcon: typeof import('./components/icons/LightBulbIcon.vue')['default']
+    LocalizedChangelogPage: typeof import('./components/LocalizedChangelogPage.vue')['default']
+    LocalizedContributingPage: typeof import('./components/LocalizedContributingPage.vue')['default']
     NewBadge: typeof import('./components/ui/newBadge.vue')['default']
     PluginIcon: typeof import('./components/icons/PluginIcon.vue')['default']
     Prose: typeof import('./components/Prose.vue')['default']

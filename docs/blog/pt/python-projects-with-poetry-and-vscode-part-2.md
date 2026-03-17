@@ -160,7 +160,7 @@ Três coisas aconteceram:
 
 - Um novo botão apareceu na barra de estado: **Run Tests**. Isto é o mesmo que digitar _pytest_ no terminal. Pressione-o e selecione **Run All Unit Tests**. Quando terminar, informá-lo-á do número de testes que passaram e dos testes que falharam:
 
-  ![test status bar](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img.png)
+  ![test status bar](/blog/poetry-2.jpg)
 
 - Um novo ícone na barra lateral esquerda. Se clicar nele, aparecerá um painel a exibir todos os testes. Aqui, pode executar cada um individualmente:
 

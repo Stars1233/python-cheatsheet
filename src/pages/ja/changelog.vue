@@ -1,15 +1,7 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
-
-onMounted(() => {
-  router.replace('/changelog')
-})
+import LocalizedChangelogPage from '~/components/LocalizedChangelogPage.vue'
 </script>
 
 <template>
-  <div></div>
+  <LocalizedChangelogPage />
 </template>
-

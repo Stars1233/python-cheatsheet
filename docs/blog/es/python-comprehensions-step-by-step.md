@@ -25,7 +25,7 @@ _List Comprehensions_ son un tipo especial de sintaxis que nos permite crear lis
 
 En este artículo, vamos a crear algunos _For Loops_ y reescribirlos, paso a paso, en _Comprehensions_.
 
-## Basics
+## Conceptos básicos
 
 La verdad es que las _List Comprehensions_ no son demasiado complejas, pero siguen siendo un poco difíciles de entender al principio porque se ven un _poco_ raras. ¿Por qué? Bueno, el orden en que están escritas es el **_opuesto_** a lo que solemos ver en un _For Loop_.
 
@@ -57,7 +57,7 @@ Observa cómo invertimos el orden:
 - Primero, tenemos lo que será la salida del bucle `[print(n) ...]`.
 - Luego definimos la variable que almacenará cada uno de los elementos y apuntamos a la `List`, `Set` o `Dictionary` con la que trabajaremos `[... for n in names]`.
 
-## Creating a new List with a Comprehension
+## Crear una nueva lista con una comprensión
 
 > Este es el uso principal de una _List Comprehension_. Otros usos pueden resultar en un código difícil de leer para ti y para otros.
 
@@ -91,7 +91,7 @@ La razón por la que podemos hacer esto es que el comportamiento estándar de un
 # ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 ```
 
-## Adding Conditionals
+## Agregar condicionales
 
 ¿Qué pasa si queremos que `new_list` solo contenga los nombres que comienzan con `C`? Con un _For Loop_, lo haríamos así:
 
@@ -118,7 +118,7 @@ En una _List Comprehension_, añadimos la sentencia if al final:
 
 Mucho más legible.
 
-## Formatting long List Comprehensions
+## Dar formato a comprensiones de lista largas
 
 Esta vez, queremos que `new_list` contenga no solo los nombres que comienzan con `C`, sino también aquellos que terminan en `e` y contienen una `k`:
 
@@ -141,11 +141,11 @@ new_list = [
 ]
 ```
 
-## Set and Dict Comprehensions
+## Comprensiones de set y dict
 
 Si aprendiste los conceptos básicos de las _List Comprehensions_... ¡Felicidades! Acabas de hacerlo con <router-link to="/cheatsheet/sets">Sets</router-link> y <router-link to="/cheatsheet/dictionaries">Dictionaries</router-link>.
 
-### Set comprehension
+### Comprensión de set
 
 ```python
 >>> my_set = {"abc", "def"}
@@ -163,7 +163,7 @@ Si aprendiste los conceptos básicos de las _List Comprehensions_... ¡Felicidad
 # {'DEF', 'ABC'}
 ```
 
-### Dict comprehension
+### Comprensión de dict
 
 ```python
 >>> my_dict = {'name': 'Christine', 'age': 98}
@@ -183,7 +183,7 @@ Si aprendiste los conceptos básicos de las _List Comprehensions_... ¡Felicidad
 
 > Artículo recomendado: [Python Sets: What, Why and How ](https://pythoncheatsheet.org/blog/python-sets-what-why-how).
 
-## Conclusion
+## Conclusión
 
 Cada vez que aprendo algo nuevo, surge esta urgencia de usarlo de inmediato. Cuando eso sucede, me obligo a detenerme y pensar por un momento... ¿Debería cambiar este _For Loop_ grande, anidado y que ya se ve desordenado a una _List Comprehension_? Probablemente no.
 

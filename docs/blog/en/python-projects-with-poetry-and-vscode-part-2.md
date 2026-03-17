@@ -159,7 +159,7 @@ Three things happened:
 
 - A new button appeared at the status bar: **Run Tests**. This is the same as typing _pytest_ in the terminal. Press it and select **Run All Unit Tests**. When finished, it will inform you the number of tests that passed and the tests that not:
 
-  ![test status bar](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img.png)
+  ![test status bar](/blog/poetry-2.jpg)
 
 - A new icon at the left bar. If you click on it, a panel displaying all the test will appear. Here, you can run each one individually:
 

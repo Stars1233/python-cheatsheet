@@ -25,7 +25,7 @@ meta:
 
 이 글에서는 몇 가지 *For Loops*를 만들고 이를 단계별로 *Comprehensions*로 다시 작성해 보겠습니다.
 
-## Basics
+## 기본
 
 사실 *List Comprehensions*는 그다지 복잡하지 않지만, 처음에는 약간 이상하게 보이기 때문에 이해하기가 조금 어렵습니다. 왜 그럴까요? *List Comprehension*이 작성되는 순서가 우리가 *For Loop*에서 일반적으로 보는 순서와 **_반대_**이기 때문입니다.
 
@@ -57,7 +57,7 @@ meta:
 - 첫째, 루프의 출력 결과가 무엇인지 `[print(n) ...]`가 옵니다.
 - 다음으로, 작업할 `List`, `Set` 또는 `Dictionary`를 가리키며 각 항목을 저장할 변수를 정의합니다 `[... for n in names]`.
 
-## Creating a new List with a Comprehension
+## 컴프리헨션으로 새 리스트 만들기
 
 > 이는 *List Comprehension*의 주요 용도입니다. 다른 용도는 본인과 다른 사람들에게 읽기 어려운 코드를 초래할 수 있습니다.
 
@@ -91,7 +91,7 @@ meta:
 # ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 ```
 
-## Adding Conditionals
+## 조건 추가하기
 
 만약 `new_list`에 'C'로 시작하는 이름만 포함하고 싶다면 어떻게 해야 할까요? *For Loop*를 사용하면 다음과 같이 할 수 있습니다.
 
@@ -118,7 +118,7 @@ meta:
 
 훨씬 더 읽기 쉽습니다.
 
-## Formatting long List Comprehensions
+## 긴 리스트 컴프리헨션 포맷팅하기
 
 이번에는 `new_list`에 'C'로 시작하는 이름뿐만 아니라 'e'로 끝나거나 'k'를 포함하는 이름도 포함하고 싶습니다.
 
@@ -141,11 +141,11 @@ new_list = [
 ]
 ```
 
-## Set and Dict Comprehensions
+## Set 및 Dict 컴프리헨션
 
 *List Comprehensions*의 기본 사항을 익히셨다면... 축하합니다! <router-link to="/cheatsheet/sets">Sets</router-link>와 <router-link to="/cheatsheet/dictionaries">Dictionaries</router-link>에 대해서도 방금 배운 것입니다.
 
-### Set comprehension
+### Set 컴프리헨션
 
 ```python
 >>> my_set = {"abc", "def"}
@@ -163,7 +163,7 @@ new_list = [
 # {'DEF', 'ABC'}
 ```
 
-### Dict comprehension
+### Dict 컴프리헨션
 
 ```python
 >>> my_dict = {'name': 'Christine', 'age': 98}
@@ -183,7 +183,7 @@ new_list = [
 
 > 추천 기사: [Python Sets: What, Why and How ](https://pythoncheatsheet.org/blog/python-sets-what-why-how).
 
-## Conclusion
+## 결론
 
 새로운 것을 배울 때마다 즉시 사용하고 싶은 충동이 생깁니다. 그럴 때 저는 잠시 멈추고 생각해 보려고 노력합니다... 이 크고, 중첩되어 있고, 이미 지저분해 보이는 *For Loop*를 *List Comprehension*으로 바꿔야 할까요? 아마 아닐 것입니다.
 

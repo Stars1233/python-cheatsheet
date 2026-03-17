@@ -37,6 +37,14 @@ export function useMeta(articleMeta?: ArticleMeta) {
   const { t, currentLocale } = useI18n()
   const base_url = getBaseUrl()
 
+  const buildLocalizedPath = (basePath: string, locale: string): string => {
+    if (basePath === '/') {
+      return locale === 'en' ? '/' : `/${locale}`
+    }
+
+    return locale === 'en' ? basePath : `/${locale}${basePath}`
+  }
+
   const defaultDescription = computed(() => t('meta.description'))
   const defaultCardImage =
     'https://raw.githubusercontent.com/labex-labs/python-cheatsheet/master/public/screenshots/dark.png'
@@ -120,7 +128,7 @@ export function useMeta(articleMeta?: ArticleMeta) {
 
     // Generate hreflang link for each supported locale
     for (const locale of SUPPORTED_LOCALES) {
-      const localePath = locale === 'en' ? basePath : `/${locale}${basePath}`
+      const localePath = buildLocalizedPath(basePath, locale)
       const localeUrl = `https://${base_url}${localePath}`
       links.push({
         rel: 'alternate',
@@ -169,6 +177,8 @@ export function useMeta(articleMeta?: ArticleMeta) {
     const tags: any[] = [
       { name: 'theme-color', content: themeColor.value },
       { name: 'description', content: pageDescription.value },
+      { name: 'language', content: currentLocale.value },
+      { 'http-equiv': 'content-language', content: currentLocale.value },
       { name: 'author', content: 'Python Cheatsheet' },
       { name: 'keywords', content: keywords.value },
       { property: 'og:title', content: pageTitle.value },

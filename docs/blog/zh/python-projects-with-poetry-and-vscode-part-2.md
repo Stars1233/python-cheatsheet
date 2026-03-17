@@ -160,7 +160,7 @@ pytest
 
 - 状态栏出现了一个新按钮：**Run Tests**。这等同于在终端中输入 _pytest_。按下它并选择 **Run All Unit Tests**。完成后，它将告知您通过的测试数量以及未通过的测试：
 
-  ![test status bar](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img.png)
+  ![test status bar](/blog/poetry-2.jpg)
 
 - 左侧栏出现一个新图标。如果单击它，将出现一个显示所有测试的面板。在这里，您可以单独运行每个测试：
 

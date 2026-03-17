@@ -160,7 +160,7 @@ pytest
 
 - На панели состояния появилась новая кнопка: **Run Tests**. Это то же самое, что ввести _pytest_ в терминале. Нажмите на нее и выберите **Run All Unit Tests**. По завершении она сообщит вам количество пройденных и не пройденных тестов:
 
-  ![test status bar](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img.png)
+  ![test status bar](/blog/poetry-2.jpg)
 
 - Новый значок на левой панели. Если нажать на него, появится панель со всеми тестами. Здесь вы можете запускать каждый из них по отдельности:
 

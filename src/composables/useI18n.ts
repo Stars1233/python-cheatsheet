@@ -31,6 +31,14 @@ export function useI18n() {
   const route = useRoute()
   const router = useRouter()
 
+  const buildLocalizedPath = (basePath: string, locale: Locale): string => {
+    if (basePath === '/') {
+      return locale === 'en' ? '/' : `/${locale}`
+    }
+
+    return locale === 'en' ? basePath : `/${locale}${basePath}`
+  }
+
   const currentLocale = computed<Locale>(() => {
     const path = route.path
     const segments = path.split('/').filter(Boolean)
@@ -53,11 +61,7 @@ export function useI18n() {
       cleanPath = segments.length > 0 ? '/' + segments.join('/') : '/'
     }
 
-    if (targetLocale === 'en') {
-      return cleanPath
-    }
-
-    return `/${targetLocale}${cleanPath}`
+    return buildLocalizedPath(cleanPath, targetLocale)
   }
 
   const switchLocale = (locale: Locale) => {
@@ -71,13 +75,7 @@ export function useI18n() {
       basePath = segments.length > 0 ? '/' + segments.join('/') : '/'
     }
 
-    if (basePath === '/') {
-      const newPath = locale === 'en' ? '/' : `/${locale}`
-      router.push(newPath)
-    } else {
-      const newPath = locale === 'en' ? basePath : `/${locale}${basePath}`
-      router.push(newPath)
-    }
+    router.push(buildLocalizedPath(basePath, locale))
   }
 
   const t = (key: string): string => {
@@ -149,4 +147,3 @@ export function useI18n() {
     SUPPORTED_LOCALES,
   }
 }
-
